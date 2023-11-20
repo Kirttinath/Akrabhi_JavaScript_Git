@@ -14,3 +14,6 @@ function newf(val1,val2, val3)
 newf.apply(obj, [1,2,3]);//gives same values
 //It says that when passing object as argument we should pass 2 arguments so we pass object and function parameters as an array 
 
+//Bind : 
+var bindObj = newf.bind(obj,1,2,3);//newf.bind(obj,1,2,3); gives the function which we should store for display it
+bindObj();// it invoked and give the result
