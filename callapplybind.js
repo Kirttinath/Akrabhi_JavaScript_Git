@@ -3,7 +3,7 @@
 
 function newf()
 {
-    console.log(this);
+    console.log(this.age);
 }
  var obj = {
     age: 24
