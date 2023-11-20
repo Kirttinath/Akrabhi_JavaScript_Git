@@ -9,3 +9,8 @@ function newf(val1,val2, val3)
     age: 24
  }
  newf.call(obj,1,2,3);
+
+ // apply :
+newf.apply(obj, [1,2,3]);//gives same values
+//It says that when passing object as argument we should pass 2 arguments so we pass object and function parameters as an array 
+
