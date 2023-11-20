@@ -4,3 +4,14 @@
 
 //in browser console create 
 //var obj = { name: "Kirtti"} now call obj.
+
+var human={
+    canfly: false,
+    canTalk: true,
+    canwalk: true
+}
+var newhuman= {
+    cancode: true,
+    cantravel: false
+}
+newhuman._proto_ = human;
