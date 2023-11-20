@@ -1,4 +1,4 @@
-//Higher Order Function :
+//Higher Order Function :✅
 //A function  which accept a function as a parameter
 //or Return a function or Both
 //for ex  : ForEach Method alwaays takes another function inside it
