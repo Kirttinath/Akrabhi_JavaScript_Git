@@ -11,3 +11,24 @@ function prod(a,b)
 var ans1 = prod(1,2);
 var ans2 = prod(1,2);
 console.log(ans1,ans2);
+
+// If any of two conditions are not maintain then impure function created
+// Impure function :
+//ex :
+var x=12;
+function prod1(a,b)
+{
+    var x=15;
+    return a*b;  // although it gives same output, This is not a pure function
+}
+var ans1 = prod1(1,2);
+var ans2 = prod1(1,2);
+console.log(ans1,ans2);
+//or
+function out(a)
+{
+return Math.random()*a;
+}
+var res1 = out(2);
+var res2 = out(2);
+console.log(res1,res2);
