@@ -3,5 +3,12 @@
 
 function constr()
 {
-   
+   this.width = 12;
+   this.height = 22;
+   this.color = "brown";
+
 }
+var constr1= new constr();
+var constr2= new constr();
+var constr3= new constr();
+console.log(constr1);
