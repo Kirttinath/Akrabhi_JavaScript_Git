@@ -8,16 +8,16 @@ console.log(this);// Refers to window
 console.log(this);// Refers to window
 
 // In method scope 
- var obj = {
-    name: "Kirtti",
-    somemethd: function()
-    {
-    console.log(this); // Refers to  Object obj
- }
+var obj = {
+   name: "Kirtti",
+   somemethd: function () {
+      console.log(this); // Refers to  Object obj
+   }
 }
 obj.somemethd();
 //In any Method "this" keyword always refers to parent object
 //Event Listeners
 var button = document.querySelector("button");
-button.addEventListener('click',function(){
-    console.log(this);})
+button.addEventListener('click', function () {
+   this.style.color="blue";// when click the button the color of the button turn blue
+})
