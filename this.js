@@ -9,9 +9,10 @@ console.log(this);// Refers to window
 
 // In method scope 
  var obj = {
-    name: "Kirtti";
+    name: "Kirtti",
     somemethd: function()
     {
     console.log(this); // Refers to  Object obj
  }
 }
+obj.somemethd();
