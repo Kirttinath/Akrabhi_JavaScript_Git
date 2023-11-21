@@ -20,3 +20,8 @@ console.log(filt);
 const arr1 = [1, 2, 3, 4, 5, 6];
 const reduced = arr1.reduce((total, current) => total + current);
 console.log(reduced);
+
+//find:
+const arr2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const found = arr2.find(n => n > 5);
+console.log(found);//It gives 6 only because it breakes when it finds it's match
