@@ -27,4 +27,4 @@ function diffr()
     }
     console.log(i);//i is not defined
 }
-diffr();
+diff();
