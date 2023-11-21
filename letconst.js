@@ -28,3 +28,9 @@ function diffr()
     console.log(i);//i is not defined
 }
 diff();
+
+// 2. var adds itself to the window object
+//    let and const doesn't add itself to window
+var a=12;
+let b=23;
+const c=45;
