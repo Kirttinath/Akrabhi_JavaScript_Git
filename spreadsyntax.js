@@ -6,3 +6,11 @@
 const arr = [4, 6, -1, 3, 10, 4];
 const max = Math.max(...arr);//... is spread syntax
 console.log(max);
+
+////How to copy a reference value
+var a=[1,2,3,4,5];
+var b=a;// bis not an another array , it just refer to the array a
+b.pop();
+console.log(b);//[1,2,3,4]
+console.log(a);//[1,2,3,4]
+//
