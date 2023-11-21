@@ -8,12 +8,12 @@
 //console.log(b); // ReferenceError: b is not defined 
 console.log(c);
 
-// Difference Between var and let
+// Difference Between var, let and const
 //1.  var is function scoped (ES5)
-//    let is braces scoped   (ES6)
+//    let and const are braces scoped   (ES6)
 function diff()
 {
-    for(var i=1;i<=10;i++)
+    for(var i=1;i<=5;i++)
     {
         console.log(i);
     }
@@ -21,7 +21,7 @@ function diff()
 }
 function diffr()
 {
-    for(let i=1;i<=10;i++)
+    for(let i=1;i<=5;i++)
     {
         console.log(i);
     }
