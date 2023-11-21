@@ -7,3 +7,11 @@
 const arr = [1, 2, 3, 4, 5];
 const newarr = arr.map(num => num * 5);
 console.log(newarr);
+
+//filter:
+const newarray = [1, 21, 3, 4, 53, 16];
+const filtered = newarray.filter(n1 => n1 === 2 || n1 === 4);
+const filt = newarray.filter(n2 => n2>=18)
+console.log(filtered);
+console.log("Greater than equal to 18 ages are ");
+console.log(filt);
