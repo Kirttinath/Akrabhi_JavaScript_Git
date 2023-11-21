@@ -1,0 +1,2 @@
+//Generator function ;
+//The generator function specifies what value is yielded next time next() is called. Can either have a finite number of yields, after which next() returns an undefined value, or an infinite number of values using a loop.
