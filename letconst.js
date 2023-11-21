@@ -19,3 +19,4 @@ function diff()
     }
     console.log(i);
 }
+diff();
