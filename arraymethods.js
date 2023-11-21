@@ -15,3 +15,8 @@ const filt = newarray.filter(n2 => n2>=18)
 console.log(filtered);
 console.log("Greater than equal to 18 ages are ");
 console.log(filt);
+
+// Reduce :
+const arr1 = [1, 2, 3, 4, 5, 6];
+const reduced = arr1.reduce((total, current) => total + current);
+console.log(reduced);
