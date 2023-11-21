@@ -9,8 +9,13 @@ console.log(max);
 
 ////How to copy a reference value
 var a=[1,2,3,4,5];
-var b=a;// bis not an another array , it just refer to the array a
-b.pop();
+var b=a;// bis not an another array , it just refer to the array a[]
+b.pop();// it pops from the original (reference ) array a[]
 console.log(b);//[1,2,3,4]
 console.log(a);//[1,2,3,4]
-//
+//But we can copy a reference value without changing the reference variable using spread operator
+var a=[1,2,3,4,5];
+var b=[...a];// b[] is an another array and  it just copy all the individual elements from array a[]  by spread operator
+b.pop();// it pops from the copied array which is b[]
+console.log(b);//[1,2,3,4]
+console.log(a);//[1,2,3,4,5]
