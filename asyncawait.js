@@ -11,3 +11,13 @@ async function myFunc() {
     console.log(greeting);
 }
 myFunc();// 'Hello world!'
+
+//Async & await is just syntactic sugar on top of Promises and like promises it also provides a way to maintain asynchronous operation more synchronously. So in JavaScript asynchronous operations can be handled in various versions… 
+//ES5 -> Callback  ||  ES6 -> Promise   ||   ES7 -> async & await
+
+const showPosts = async () => {
+	const response = await fetch('');
+	const posts = await response.json();
+	console.log(posts) ;
+}
+showPosts();
