@@ -19,3 +19,12 @@ var b=[...a];// b[] is an another array and  it just copy all the individual ele
 b.pop();// it pops from the copied array which is b[]
 console.log(b);//[1,2,3,4]
 console.log(a);//[1,2,3,4,5]
+
+//Similarly we can copy from object
+var obj ={name: "Kirtti", age: 24};
+var newobj = {...obj};
+console.log(obj);
+console.log(newobj);
+newobj.age+=1;
+console.log(newobj);
+console.log(obj);
