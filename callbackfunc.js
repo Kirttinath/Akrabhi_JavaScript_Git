@@ -4,4 +4,4 @@ function myFunc(text, callback) {
     setTimeout(function() {
         callback(text);
     }, 3000);}
-myFunc('Hello world!', console.log);// 'Hello world!'
+myFunc('Hello Kirtti!', console.log);// 'Hello Kirtti!'
