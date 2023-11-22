@@ -263,3 +263,45 @@ this.context.lineTo((this.canvas.width / 2), 140);
 this.context.lineWidth = 10;
 this.context.strokeStyle = '#ffffff';
 this.context.stroke();
+ // Set the default canvas font and align it to the center
+ this.context.font = '100px Courier New';
+ this.context.textAlign = 'center';
+
+ // Draw the players score (left)
+ this.context.fillText(
+     this.player.score.toString(),
+     (this.canvas.width / 2) - 300,
+     200
+ );
+
+ // Draw the paddles score (right)
+ this.context.fillText(
+     this.ai.score.toString(),
+     (this.canvas.width / 2) + 300,
+     200
+ );
+
+ // Change the font size for the center score text
+ this.context.font = '30px Courier New';
+
+ // Draw the winning score (center)
+ this.context.fillText(
+     'Round ' + (Pong.round + 1),
+     (this.canvas.width / 2),
+     35
+ );
+
+ // Change the font size for the center score value
+ this.context.font = '40px Courier';
+
+ // Draw the current round number
+ this.context.fillText(
+     rounds[Pong.round] ? rounds[Pong.round] : rounds[Pong.round - 1],
+     (this.canvas.width / 2),
+     100
+ );
+},
+
+loop: function () {
+ Pong.update();
+ Pong.draw();
