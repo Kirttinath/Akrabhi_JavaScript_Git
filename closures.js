@@ -16,3 +16,18 @@ console.log(a);//10
 
 //Closures are used when you want to extend behavior such as passing variables, methods, or arrays from an outer function to an inner function.
 //JavaScript is not pure object-oriented language but you can achieve object-oriented behavior through closures
+
+
+//closure access
+  function counter()
+  {
+    var count =0;
+    function incrementcounter()
+    {
+      count++;
+      console.log(count);
+    }
+    return incrementcounter;
+  }
+ var cn = counter();
+ cn();
