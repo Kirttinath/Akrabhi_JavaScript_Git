@@ -245,3 +245,13 @@ var Game = {
     this.ai.width,
     this.ai.height 
 );
+
+// Draw the Ball
+if (Pong._turnDelayIsOver.call(this)) {
+    this.context.fillRect(
+        this.ball.x,
+        this.ball.y,
+        this.ball.width,
+        this.ball.height
+    );
+}
