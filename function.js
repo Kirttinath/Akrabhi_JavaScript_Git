@@ -34,3 +34,11 @@ var f = function abc(){
 };
 f();//hello
 //abc();//abc is not defined error
+
+
+//Difference between parameter and arguments :
+//parameter - functions accepts : parameters
+//arguments - functions gives   : arguments
+//ex ;
+function sum(x,y){};// x and y are parameters
+sum(1,2);//1 and 2 are argumets
