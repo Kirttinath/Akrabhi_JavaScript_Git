@@ -42,3 +42,14 @@ f();//hello
 //ex ;
 function sum(x,y){};// x and y are parameters
 sum(1,2);//1 and 2 are argumets
+
+
+//First class function :
+//A function passed to another function or returns another function
+//The ability of function used as values andd passed into as an argument to another function is known as firstclass function in JS
+
+function xyz(m)
+{
+    console.log(m);
+}
+xyz(function we() {});
