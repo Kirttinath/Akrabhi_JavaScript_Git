@@ -20,8 +20,8 @@ html,body {
 
 #panel {
     overflow: hidden;
-    width: 80%;
-    height: 80%;
+    width: 85%;
+    height: 85%;
     border-radius: 5px;
     background-color: #ffffff
 }
@@ -33,7 +33,7 @@ html,body {
     display: flex;
     color: #ffffff;
     width: 100%;
-    height: 15%;
+    height: 100px;
     background-color: rgb(49, 97, 62);
 }
 
@@ -45,6 +45,11 @@ html,body {
     
 }
 
+.elem h2{
+    font-size: 22px;
+    font-weight: 600;
+}
+
 .box {
     padding: 10px 20px;
     color: rgb(6, 117, 148);
@@ -52,4 +57,33 @@ html,body {
     font-weight: 700;
     background-color: #ffffff;
     border-radius: 5px;
+}
+
+#pbtm {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+    width: 100%;
+    height: calc(100% - 100px);
+    
+}
+
+.bubble{
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(98, 219, 253);
+    border-radius: 50px;
+    color: rgb(52, 6, 94);
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.bubble:hover{
+    background-color: rgb(27, 109, 132);
+    cursor: pointer;
+    color: #ffffff;
 }
