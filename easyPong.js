@@ -25,3 +25,17 @@ var ball = {
     }
 };
 
+//The ai object (The two lines which move up and down)
+ var AI = {
+    new: function(side) {
+        return {
+            width: 18,
+            height: 180,
+            x: side === 'left' ? 150 : this.canvas.width - 150,
+            y: (this.canvas.height / 2)-35,
+            score: 0,
+            move: DIRECTION.IDLE,
+            speed: 8
+        };
+    }
+};
