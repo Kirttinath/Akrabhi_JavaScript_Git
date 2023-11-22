@@ -255,3 +255,11 @@ if (Pong._turnDelayIsOver.call(this)) {
         this.ball.height
     );
 }
+// Draw the net (Line in the middle)
+this.context.beginPath();
+this.context.setLineDash([7, 15]);
+this.context.moveTo((this.canvas.width / 2), this.canvas.height - 140);
+this.context.lineTo((this.canvas.width / 2), 140);
+this.context.lineWidth = 10;
+this.context.strokeStyle = '#ffffff';
+this.context.stroke();
