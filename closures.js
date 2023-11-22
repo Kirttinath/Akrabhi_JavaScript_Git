@@ -40,4 +40,9 @@ for(let i=1; i<=50;i++)
   cn.decrementcounter();
 }//50 times 1 and 0 values are printed
 
+//Disadvantages of closures :
+//1) memory leakage: if we have a lot of nested functions, it can cause the browser to run out of memory.
+//2) scope chain pollution: when you declare variables in a function that is inside another function, these variables become part of the outer function'
+
+
 
