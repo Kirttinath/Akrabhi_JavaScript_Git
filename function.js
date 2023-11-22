@@ -1,13 +1,19 @@
-var x=19;
-function a(){
-    var x=20;
-    console.log(x);
-}
+//Function in js :
+//Anonymous function : A function without a name 
+//function(){};
+//Named function : A function with a name
 
-function b(){
-    var x=21;
-    console.log(x);
+//Function Statement :
+//A function is declared using the keyword "function" followed by its name and parameters enclosed within parentheses. The code to be executed by the function
+function a()
+{
+    console.log("Hello");
 }
-a();//20
-b();//21
-console.log(x);//19
+a();//Hello
+
+//Function Expression :
+var b = function()
+            {
+                console.log("World");
+            }
+b();//world
