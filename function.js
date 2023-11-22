@@ -2,7 +2,7 @@
 
 //Function Statement :
 a();//Hello
-b();//error : b is not a function
+//b();//error : b is not a function
 function a()
 {
     console.log("Hello");
@@ -28,4 +28,9 @@ var b = function()
 //anonymous functions are used when the functions are used as values
 
 
-//Named function : A function with a name
+//Named function expression : A function with a name use as a variable
+var f = function abc(){
+    console.log("hello");
+};
+f();//hello
+//abc();//abc is not defined error
