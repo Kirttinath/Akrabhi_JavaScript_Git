@@ -327,3 +327,16 @@ listen: function () {
     // Stop the player from moving when there are no keys being pressed.
     document.addEventListener('keyup', function (key) { Pong.player.move = DIRECTION.IDLE; });
 },
+ // Reset the ball location, the player turns and set a delay before the next round begins.
+ _resetTurn: function(victor, loser) {
+    this.ball = Ball.new.call(this, this.ball.speed);
+    this.turn = loser;
+    this.timer = (new Date()).getTime();
+
+    victor.score++;
+},
+
+// Wait for a delay to have passed after each turn.
+_turnDelayIsOver: function() {
+    return ((new Date()).getTime() - this.timer >= 1000);
+},
