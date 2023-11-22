@@ -6,6 +6,9 @@ function dataout() {
     var a = 100;
     function datahide() {
         a++;
+        console.log(a);
     }
+    return datahide;
 }
-console.log(a);
+var dt = dataout();
+dt();
