@@ -5,7 +5,7 @@ var bub =0;
 function scoreincrease() {
     score += 10;
     document.querySelector("#scoreval").textContent = score;
-}
+}// for increase the score when hit the bubble
 
 function makeBubbles() {
     var clutter = "";
