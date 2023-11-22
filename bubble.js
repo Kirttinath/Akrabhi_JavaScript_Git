@@ -33,7 +33,7 @@ function setTimer() {
 function hitbubble() {
      bub = Math.floor(Math.random() * 10);
     document.querySelector("#hitbub").textContent = bub;
-}
+}//for hit a new bubble this create a new value of bubble
 
 document.querySelector("#pbtm")
 .addEventListener("click", function (details) {
