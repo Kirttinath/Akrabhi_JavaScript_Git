@@ -44,7 +44,7 @@ document.querySelector("#pbtm")
     makeBubbles();
     hitbubble();
   }
-});
+});//when click the right bubble it increase the vbalue with creating new bubbles and creating new value for hit
 
 
 hitbubble();
