@@ -226,3 +226,14 @@ var Game = {
             this.canvas.width,
             this.canvas.height
         );
+
+ // Set the fill style to white (For the paddles and the ball)
+ this.context.fillStyle = '#ffffff';
+ 
+ // Draw the Player
+ this.context.fillRect(
+     this.player.x,
+     this.player.y,
+     this.player.width,
+     this.player.height
+ );        
