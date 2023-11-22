@@ -1,4 +1,5 @@
-var timer = 60;
+var timer = 60;//for timer
+
 var score = 0;
 var bub =0;
 function scoreincrease() {
