@@ -22,12 +22,22 @@ console.log(a);//10
   function counter()
   {
     var count =0;
-    function incrementcounter()
+    this.incrementcounter = function()
     {
       count++;
       console.log(count);
     }
-    return incrementcounter;
+    this.decrementcounter = function()
+    {
+      count--;
+      console.log(count);
+    }
   }
- var cn = counter();
- cn();
+ var cn = new  counter();
+for(let i=1; i<=50;i++)
+{
+  cn.incrementcounter();
+  cn.decrementcounter();
+}//50 times 1 and 0 values are printed
+
+
