@@ -236,4 +236,12 @@ var Game = {
      this.player.y,
      this.player.width,
      this.player.height
- );        
+ );    
+ 
+  // Draw the Ai
+  this.context.fillRect(
+    this.ai.x,
+    this.ai.y,
+    this.ai.width,
+    this.ai.height 
+);
