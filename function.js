@@ -1,10 +1,6 @@
 //Function in js :
-//Anonymous function : A function without a name 
-//function(){};
-//Named function : A function with a name
 
 //Function Statement :
-//A function is declared using the keyword "function" followed by its name and parameters enclosed within parentheses. The code to be executed by the function
 a();//Hello
 b();//error : b is not a function
 function a()
@@ -13,6 +9,8 @@ function a()
 }
 
 //But the difference between statement and expression is hoisting
+
+
 //Function Expression :
 var b = function()
             {
@@ -20,4 +18,14 @@ var b = function()
             }
 
 
+//Function declaration : it is same as function statement
+//A function is declared using the keyword "function" followed by its name and parameters enclosed within parentheses.
+//but it gets hoisted to top of scope
 
+
+//Anonymous function : A function without a name 
+//function(){};
+//anonymous functions are used when the functions are used as values
+
+
+//Named function : A function with a name
