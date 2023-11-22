@@ -14,7 +14,7 @@ function makeBubbles() {
         clutter += ` <div class="bubble">${val}</div> `;
     }
     document.querySelector("#pbtm").innerHTML = clutter;
-}
+}//For make new bubbles in screen
 
 function setTimer() {
     var clrtm = setInterval(function () {
