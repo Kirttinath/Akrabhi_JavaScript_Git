@@ -13,3 +13,9 @@ html,body{
     height: 100%;
     background-color: rgb(126, 208, 149);
 }
+
+#panel{
+    width: 90%;
+    height: 90%;
+    background-color: #fff;
+}
