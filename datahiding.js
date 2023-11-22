@@ -12,3 +12,7 @@ function dataout() {
 }
 var dt = dataout();
 dt();
+
+var dt1 = dataout();
+dt1();
+dt1();
