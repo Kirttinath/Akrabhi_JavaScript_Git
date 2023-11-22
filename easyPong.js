@@ -340,3 +340,14 @@ listen: function () {
 _turnDelayIsOver: function() {
     return ((new Date()).getTime() - this.timer >= 1000);
 },
+
+ // Select a random color as the background of each level/round.
+ _generateRoundColor: function () {
+    var newColor = colors[Math.floor(Math.random() * colors.length)];
+    if (newColor === this.color) return Pong._generateRoundColor();
+    return newColor;
+}
+};
+
+var Pong = Object.assign({}, Game);
+Pong.initialize();
