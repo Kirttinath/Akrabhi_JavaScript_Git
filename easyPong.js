@@ -170,3 +170,59 @@ var Game = {
  
                 }
             }
+            // Handle ai-ball collision
+            if (this.ball.x - this.ball.width <= this.ai.x && this.ball.x >= this.ai.x - this.ai.width) {
+                if (this.ball.y <= this.ai.y + this.ai.height && this.ball.y + this.ball.height >= this.ai.y) {
+                    this.ball.x = (this.ai.x - this.ball.width);
+                    this.ball.moveX = DIRECTION.LEFT;
+ 
+                }
+            }
+        }
+ 
+        // Handle the end of round transition
+        // Check to see if the player won the round.
+        if (this.player.score === rounds[this.round]) {
+            // Check to see if there are any more rounds/levels left and display the victory screen if
+            // there are not.
+            if (!rounds[this.round + 1]) {
+                this.over = true;
+                setTimeout(function () { Pong.endGameMenu('Winner!'); }, 1000);
+            } else {
+                // If there is another round, reset all the values and increment the round number.
+                this.color = this._generateRoundColor();
+                this.player.score = this.ai.score = 0;
+                this.player.speed += 0.5;
+                this.ai.speed += 1;
+                this.ball.speed += 1;
+                this.round += 1;
+ 
+            }
+        }
+        // Check to see if the ai/AI has won the round.
+        else if (this.ai.score === rounds[this.round]) {
+            this.over = true;
+            setTimeout(function () { Pong.endGameMenu('Game Over!'); }, 1000);
+        }
+    },
+ 
+    // Draw the objects to the canvas element
+    draw: function () {
+        // Clear the Canvas
+        this.context.clearRect(
+            0,
+            0,
+            this.canvas.width,
+            this.canvas.height
+        );
+ 
+        // Set the fill style to black
+        this.context.fillStyle = this.color;
+ 
+        // Draw the background
+        this.context.fillRect(
+            0,
+            0,
+            this.canvas.width,
+            this.canvas.height
+        );
