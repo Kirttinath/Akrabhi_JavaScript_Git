@@ -27,7 +27,7 @@ function setTimer() {
             document.querySelector("#pbtm").innerHTML = `<h1>GAME OVER</h1>`;
         }
     }, 1000)
-}
+}//timer countdown and game over 
 
 
 function hitbubble() {
