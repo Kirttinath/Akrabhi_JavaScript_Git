@@ -17,3 +17,26 @@ setTimeout(function () {
         console.log("error is caught here!");
     }
 }, 1000);
+
+//If an exception happens in “scheduled” code, like in setTimeout, then try...catch won’t catch it
+try {
+    setTimeout(function() {
+      noSuchVariable; // script will die here
+    }, 1000);
+  } catch (err) {
+    console.log( "won't work" );//that’s because the function itself is executed later, when the engine has already left the try...catch construct.
+  }
+
+  //To catch an exception inside a scheduled function, try...catch must be inside that function:
+
+setTimeout(function() {
+    try {
+      noSuchVariable; // try...catch handles the error!
+    } catch {
+      console.log( "error is caught here!" );
+    }
+  }, 1000);
+
+
+  //Error Object
+  //When an error occurs, JavaScript generates an object containing the details about it. The object is then passed as an argument to catch
