@@ -6,7 +6,33 @@
 #shotp{
     justify-content: center;
     display: flex;
+    align-items: center;
+    font-size: 30px;
+    color: rgb(200, 0, 255);
 }
+#show{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
 #bd{
     background-color: aquamarine;
+}
+#btn{
+    size: 200px;
+    font-size: 25px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}
+
+#btn:hover{
+    background-color: rgb(37, 59, 52);
+    cursor: pointer;
+    color: aliceblue;
 }
