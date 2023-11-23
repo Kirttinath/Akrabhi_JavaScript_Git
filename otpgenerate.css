@@ -1,0 +1,12 @@
+#sty{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+#shotp{
+    justify-content: center;
+    display: flex;
+}
+#bd{
+    background-color: aquamarine;
+}
