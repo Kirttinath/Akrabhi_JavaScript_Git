@@ -30,3 +30,7 @@ document.getElementById("btn").addEventListener("click", function xyz(){
 });
 }
 evvent();
+
+//Garbage Collections and Remove EventListeners
+//Event listeners are heavy to control this we have Garbage collecctor in JS
+//Events takes more memory
