@@ -40,3 +40,11 @@ setTimeout(function() {
 
   //Error Object
   //When an error occurs, JavaScript generates an object containing the details about it. The object is then passed as an argument to catch
+  //For all built-in errors, the error object has two main properties:
+// name : Error name. For instance, for an undefined variable that’s "ReferenceError".
+// message : Textual message about error details.
+try {
+    // ...
+  } catch (err) { // <-- the "error object", could use another word instead of err
+    // ...
+  }
