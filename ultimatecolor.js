@@ -8,4 +8,16 @@ const randomcolor = function(){
      }
      return color;
 };
+let colorchange;
+
+const changecolor = function()
+{    if(!colorchange){
+    colorchange =  setInterval(cchange,1000);
+}
+     function cchange(){
+
+        document.body.style.backgroundColor = randomcolor();
+    }
+};
+
 
