@@ -19,6 +19,14 @@ x(function y(){
     console.log("world");
 });
 
+function evvent(){
+let count = 0;
 document.getElementById("btn").addEventListener("click", function xyz(){
-    console.log("Kirtti");
+    var res =Number(++count); // Convert the counting from string to Number
+    function tx(){
+        document.querySelector("#txt").textContent = res;// Display on the hreading tag
+    }
+    tx();
 });
+}
+evvent();
