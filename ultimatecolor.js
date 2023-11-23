@@ -20,4 +20,12 @@ const changecolor = function()
     }
 };
 
+const stopcolor = function()
+{
+    clearInterval(colorchange);
+    colorchange = null;
+};
 
+document.querySelector("#start").addEventListener("click", changecolor);
+
+document.querySelector("#stop").addEventListener("click", stopcolor);
