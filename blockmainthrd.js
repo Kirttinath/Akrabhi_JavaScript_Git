@@ -1,9 +1,10 @@
 console.log("Started");
 
- setTimeout(function()
+function cb()
  {
     console.log("After 5 sec");
- }, 5000);
+ }
+ setTimeout(cb, 0);
 
 console.log("Ended");
 
