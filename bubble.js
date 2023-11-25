@@ -24,7 +24,7 @@ function setTimer() {
         }
         else {
             clearInterval(clrtm);
-            document.querySelector("#pbtm").innerHTML = `<h1>GAME OVER</h1>`;
+            document.querySelector("#pbtm").innerHTML = `<h1>Score = ${score}<br>GAME OVER</h1>`;
         }
     }, 1000)
 }//timer countdown and game over 
