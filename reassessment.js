@@ -1,31 +1,50 @@
-document.querySelector("#btn").addEventListener("click", function () {
-    document.querySelector("#txt").innerHTML = "Kirtti";
-})
+// const languageObj = {name: "JavaScript", age:26};
+// _languageObj = languageObj;
 
-// Reassessment
-//reduce function
-const arr = [2, 7, 3, 9, 6];
+// _languageObj.age = "I don't know";
 
-const output = arr.reduce(function (max, curr) {
-    if (curr > max)
-    {
-        max=curr;
-    }
-    return max;
-}, 0);
-console.log(output);
+// console. log(languageObj);
+// console. log(_languageObj);
 
-const dtls = [
-    {fname: "Kirtti",lname: "Ojha", age: 24},
-    {fname: "pritam",lname: "baral", age: 22},
-    {fname: "Dipti",lname: "mahakud", age: 12}
-];
+// const numbers = [1, 2, 3, 4, 5];
+// const _numbers = [...numbers];
+// _numbers[0] = 10;
+// console.log(numbers); //[1,2,3,4,5]
+// console.log(_numbers);//[10,2,3,4,5]
 
-const output2 = dtls.reduce((names, curr) => {
-    if(curr.age > 18){
-         names.push(curr.fname); 
-    }
-    return names; 
-}, []);
+// function cb(cm)
+// {
+//     cm();
+// }
 
-console.log(output2);
+//  var cm = function cc()
+// {
+//     console.log("Kirtti");
+// }
+// const numbers = [1, 2, 3, 4, 5];
+
+// console.log(numbers.map(x => x+5));
+// console.log(numbers);
+// numbers.forEach(function()
+// {
+//     y = y+5;
+// })
+// var output = (function(x) { delete x; 
+//     return x; })(0);
+//      console.log(output);
+// var x;
+// console.log(x);
+// console.log(y);
+// let  numbers = [1, 2, 3, 4, 5];
+// console.log(numbers.slice(1,3));
+// console.log(numbers);
+// numbers.splice(1,3);
+// var set = new Set();
+// set.add(1);
+// set.add(2);
+// set.add(3);
+// set.add(2);
+
+// console.log(set)
+console.log(x);
+var x=10;
