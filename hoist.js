@@ -1,12 +1,11 @@
 //ht();
 console.log(x);
 
-
-var x=5;
+var x = 5;
 var ht = () => {
-    console.log("Hello Kirtti");
-}
+  console.log("Hello Kirtti");
+};
 console.log(ht);
-//ht();
+ht();
 
 //console.log(x);
