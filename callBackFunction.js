@@ -1,6 +1,7 @@
-//Call Back Function :
-// a function passing a function as a parameter
-//And this called callback function means that when we required that function we can callback it to execute
+//* Call Back Function :
+//? a function passing a function as a parameter
+//? And this called callback function means that when we required that function we can callback it to execute
+
 //ex
 
 setTimeout(function () {
