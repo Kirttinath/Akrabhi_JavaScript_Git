@@ -7,6 +7,7 @@
 const arr0 = [1, 2, 3, 4, 5];
 const newarr = arr0.map((num) => num * 5);
 console.log(newarr);
+console.log(arr0);
 
 //!filter:
 const newarray = [1, 21, 3, 4, 53, 16];
@@ -24,7 +25,7 @@ console.log(reduced);
 //! find:
 const arr2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 const found = arr2.find((n) => n > 5);
-console.log(found); //It gives 6 only because it breakes when it finds it's match
+console.log(found); //? It gives 6 only because it breakes when it finds it's match
 
 //* findIndex: This works almost identically to find, but rather than returning the first matching element it returns the index of the first matching element. Take the following example, which uses names instead of numbers for clarity.
 
@@ -38,7 +39,7 @@ const arr4 = ["Nick", "Frank", "Joe", "Frank"];
 const foundIndex1 = arr4.indexOf("Frank");
 console.log(foundIndex1); // 1
 
-//* push, pop, shift, unshift**There are a lot of great array method to help add or remove elements from arrays in a targeted fashion.
+//* push, pop, shift, unshift  ==>  There are a lot of great array method to help add or remove elements from arrays in a targeted fashion.
 
 //* push: This is a relatively simple method that adds an item to the end of an array. It modifies the array in-place and the function itself returns the item added to the array.
 
@@ -67,16 +68,18 @@ console.log(arr8); // [5, 6, 7, 1, 2, 3, 4]console.log(unshifted);// 7
 //* splice: Change the contents of an array by removing or replacing existing elements and/or adding new elements. This method modifies the array in place.
 //The following code sample can be read as: at position 1 of the array, remove 0 elements and insert b.
 let arr9 = ["a", "c", "d", "e"];
-arr9.splice(1, 0, "b");
+const spliced = arr9.splice(0, 1, "b");
+console.log(spliced);
+console.log(arr9);
 
 //* slice: returns a shallow copy of an array from a specified start position and before a specified end position. If no end position is specified, the rest of the array is returned. Importantly, this method does not modify the array in place but rather returns the desired subset.
 let arr10 = ["a", "b", "c", "d", "e"];
-const sliced = arr10.slice(2, 4);
+const sliced = arr10.slice(0, 4);
 console.log(sliced); // ['c', 'd']console.log(arr);// ['a', 'b', 'c', 'd', 'e']
 
 //*  sort: sorts an array based on the provided function which takes a first element and second element argument. Modifies the array in place. If the function returns negative or 0, the order remains unchanged. If positive, the element order is switched.
 
-let arr11 = [1, 7, 3, -1, 5, 7, 2];
-const sorter = (firstEl, secondEl) => firstEl - secondEl;
-arr11.sort(sorter);
+let arr11 = [1, 7, 3, -1, 5, 7, 0, 2];
+//const sorter = (firstEl, secondEl) => firstEl - secondEl;
+arr11.sort((fel, lel) => fel - lel);
 console.log(arr11);
