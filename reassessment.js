@@ -1,4 +1,3 @@
-const b = 20;
 function a() {
   //?var b = 10;
   function c() {
@@ -6,4 +5,5 @@ function a() {
   }
   c();
 }
+const b = 20;
 a();
