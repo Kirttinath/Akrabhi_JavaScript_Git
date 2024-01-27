@@ -1,9 +1,5 @@
-function a() {
-  //?var b = 10;
-  function c() {
-    console.log(b);
-  }
-  c();
+var a = 10;
+function test() {
+  var b = 17;
 }
-const b = 20;
-a();
+test();

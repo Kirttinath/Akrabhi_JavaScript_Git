@@ -22,6 +22,21 @@ const arr1 = [1, 2, 3, 4, 5, 6];
 const reduced = arr1.reduce((total, current) => total + current);
 console.log(reduced);
 
+//? Find average value from reduce
+const numbers = [10, 20, 30, 40, 50];
+
+const average = numbers.reduce((accumulator, currentValue, index, array) => {
+  accumulator += currentValue;
+
+  if (index === array.length - 1) {
+    return accumulator / array.length;
+  } else {
+    return accumulator;
+  }
+}, 0);
+
+console.log(average); // Output: 30
+
 //! find:
 const arr2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 const found = arr2.find((n) => n > 5);
@@ -66,7 +81,7 @@ console.log(arr8); // [5, 6, 7, 1, 2, 3, 4]console.log(unshifted);// 7
 
 //* splice, slice ==> These methods either modify or return subsets of arrays.
 //* splice: Change the contents of an array by removing or replacing existing elements and/or adding new elements. This method modifies the array in place.
-//The following code sample can be read as: at position 1 of the array, remove 0 elements and insert b.
+//? The following code sample can be read as: at position 1 of the array, remove 0 elements and insert b.
 let arr9 = ["a", "c", "d", "e"];
 const spliced = arr9.splice(0, 1, "b");
 console.log(spliced);
