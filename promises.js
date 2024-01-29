@@ -27,7 +27,7 @@ myPromise
 //todo  ==> Promises resolve the issue of ‘callback hell’ which is nothing but a recursive structure of callbacks (callbacks within callbacks within callbacks and so forth).
 
 const promise = new Promise((resolve, reject) => {
-  isNameExist = true;
+  isNameExist = false;
   if (isNameExist) {
     resolve("User name exist");
   } else {
@@ -36,6 +36,6 @@ const promise = new Promise((resolve, reject) => {
 });
 promise
   .then((result) => console.log(result))
-  .catch(() => {
-    console.log("error!");
+  .catch((error) => {
+    console.log(error);
   });
