@@ -7,7 +7,7 @@ function newf(val1, val2, val3) {
 var obj = {
   age: 24,
 };
-// newf.call(obj, 1, 2, 3);
+newf.call(obj, 1, 2, 3);
 
 // //* apply :
 // newf.apply(obj, [1, 2, 3]); //gives same values
