@@ -3,3 +3,6 @@ const inter = function () {
 };
 
 setTimeout(inter, 1000);
+
+console.log(x);
+var x = 12;

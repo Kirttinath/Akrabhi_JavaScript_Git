@@ -10,3 +10,4 @@ var constr1 = new constr();
 var constr2 = new constr();
 var constr3 = new constr();
 console.log(constr1);
+console.log(constr2);

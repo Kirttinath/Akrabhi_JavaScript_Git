@@ -19,7 +19,7 @@ console.log(filt);
 
 //! Reduce :
 const arr1 = [1, 2, 3, 4, 5, 6];
-const reduced = arr1.reduce((total, current) => total + current);
+const reduced = arr1.reduce((total, current) => total + current, 20);
 console.log(reduced);
 
 //? Find average value from reduce
