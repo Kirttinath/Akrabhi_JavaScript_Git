@@ -1,5 +1,5 @@
 # Comprehensive JavaScript Concept Repository
-
+![JS Concepts](https://media.geeksforgeeks.org/wp-content/cdn-uploads/20201028214738/7-JavaScript-Concepts-That-Every-Developer-Must-Know.jpg)
 ## Overview
 The JavaScript Concept Repository is a meticulously curated compendium designed to encapsulate the full spectrum of JavaScript fundamentals, advanced topics, and practical implementations. This repository serves as a definitive resource for developers, educators, and learners aiming to deepen their understanding and proficiency in JavaScript.
 
